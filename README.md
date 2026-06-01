@@ -1,16 +1,40 @@
-# React + Vite
+# 百時間学習録 (Hyaku Jikan Gakushūroku)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Japanese study case timer app built with React. Track multiple tasks simultaneously, monitor elapsed time, and review your history — all in one place.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Multiple timers** — run several study cases at the same time, each independently controlled
+- **Start / Stop / Delete** — full control over each task with simple one-click buttons
+- **Auto-complete** — tasks automatically stop and move to history when the time limit is reached
+- **History log** — every completed or deleted task is recorded with a timestamp and status
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Hooks — `useState`, `useRef`, `useEffect`)
+- Day.js (time formatting)
+- CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/your-username/百時間学習録.git
+cd 百時間学習録
+npm install
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── ListContainer.jsx   # timer list with start/stop/delete logic
+│   └── ...
+├── App.jsx
+└── main.jsx
+```
+
+## Name
+
+**百時間学習録** means *"100-hour study record"* — a nod to the idea of logging focused study time toward a long-term goal.
