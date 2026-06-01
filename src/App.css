@@ -1,0 +1,127 @@
+.header{
+    padding-top: 20px;
+    text-align: center;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 18px auto;
+}
+.input-field{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #737373;
+    width: 400px;
+}
+.add-btn{
+    display: block; 
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border:1px solid #737373;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.content-container{
+    width: 75%;
+}
+.history-container{
+    width: 20%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f1eeee;
+    height: fit-content;
+}
+
+.history-header{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;  
+    justify-content: space-between;
+}
+.history-header button{
+    background-color: transparent;
+    font-size: 10px;
+    border: none;
+    color: #933f39;
+    cursor: pointer;
+}
+
+ul.history-list{
+    list-style: none;
+    padding: 0;
+}
+
+.history-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.history-item .history-item-info{
+    display: flex;
+    gap: 10px;
+}
+
+.item-list{
+    width: 60%; 
+    margin: 0 auto;
+}
+
+.item-container{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #d6d6d6;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.item-container.stopping{
+    background-color: #535353;
+    color: white;
+}
+.time-up{
+    color: rgb(228, 146, 146);
+    font-size: 12px;
+    margin-left: 10px;
+}
+.list-container span:first-child{
+    margin-right: auto;
+}
+.item-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.item-btns .btns{
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.start-btn{
+    background-color: #59725a;
+}
+.end-btn{
+    background-color: #933f39;
+}
+.clear-btn{
+    background-color: #2e3338;
+}

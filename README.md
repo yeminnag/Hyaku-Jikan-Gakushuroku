@@ -1,40 +1,16 @@
-# 百時間学習録
+# React + Vite
 
-Reactで作ったタスク別タイマーアプリ。複数の学習案件を同時に計測し、履歴として記録できます。
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 機能
+Currently, two official plugins are available:
 
-- **複数タイマー** — 複数の案件を同時に、それぞれ独立して計測
-- **開始 / 停止 / 削除** — 「始」「止」「削」ボタンで簡単操作
-- **自動完了** — 制限時間に達したタスクは自動停止して履歴へ移動
-- **履歴ログ** — 完了・削除したタスクをタイムスタンプ付きで記録
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 使用技術
+## React Compiler
 
-- React（`useState` / `useRef` / `useEffect`）
-- Day.js（時間のフォーマット）
-- CSS
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 使い方
+## Expanding the ESLint configuration
 
-```bash
-git clone https://github.com/your-username/百時間学習録.git
-cd 百時間学習録
-npm install
-npm run dev
-```
-
-## ファイル構成
-
-```
-src/
-├── components/
-│   ├── ListContainer.jsx   # タイマーリスト（開始・停止・削除ロジック）
-│   └── ...
-├── App.jsx
-└── main.jsx
-```
-
-## アプリ名について
-
-**百時間学習録** — 100時間分の学習を記録していくという意味を込めています。長期的な目標に向けて、日々の学習時間を積み上げるイメージです。
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
