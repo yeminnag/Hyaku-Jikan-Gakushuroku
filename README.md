@@ -2,6 +2,8 @@
 
 A Japanese study case timer app built with React. Track multiple tasks simultaneously, monitor elapsed time, and review your history — all in one place.
 
+URL - https://100-hours-study-timer.vercel.app/
+
 ## Features
 
 - **Multiple timers** — run several study cases at the same time, each independently controlled
